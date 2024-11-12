@@ -2,13 +2,13 @@ import { InlineCode } from "@/once-ui/components";
 
 const person = {
     firstName: 'Muhammad',
-    lastName:  'Amin',
+    lastName: 'Amin',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Software Engineer',
-    avatar:    '/images/avatar-aminju.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    role: 'Software Engineer',
+    avatar: '/images/avatar-aminju.jpg',
+    location: 'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
 }
 
@@ -24,31 +24,31 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/aminju14',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/aminju/',
     },
     {
-        name: 'X',
-        icon: 'x',
-        link: '',
-    },
-    {
-        name: 'Email',
+        name: 'Behance',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'https://www.behance.net/aminju',
     },
+    // {
+    //     name: 'Email',
+    //     icon: 'email',
+    //     link: 'work.aminju@gmail.com',
+    // },
 ]
 
 const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Software Engineer (Technical Leader)</>,
+    subline: <>Hello, i am Amin. For 5 years+, I'm a seasoned professional with expertise in mobile and leadership. As a Technical Leader, im responsible for guilding my team through various technical challenges, ensuring the succesful completion of projects, and fostering a collaborative work environment. My role as Mobile Developer involves designing, developing, and maintaining mobile applications, leveraging my programming skills and knowledge of mobile platforms. With my technical and leadership skills, i play a crucial role in driving innovation, optimizing processes, and delivering high-quality solutions.</>
 }
 
 const about = {
@@ -76,12 +76,16 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'PT. Triputra Agro Persada Tbk.',
+                timeframe: '2020 - Present',
+                role: 'Software Engineer Section Head (Technical Leader)',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Manage IT team to excecute tasks.</>,
+                    <>Assess tasks for the team.</>,
+                    <>Maintan applications</>,
+                    <>Control and monitor ongoing projects</>,
+                    <>Solving and analysis existing issue from current applicaition</>,
+                    <>Deployment mobile app to Playstore or Appstore</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
@@ -93,14 +97,32 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'PT. Indocyber Global Technology',
+                timeframe: '2017 - 2020',
+                role: 'Mobile Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Develop Android or IOS Applications</>,
+                    <>Design UI/UX for Android/IOS Application</>,
+                    <>Maintain Android or Ios application issues</>,
+                    <>Discuss requirement with users</>,
+                    <>Analyze projects</>,
+                    <>Deployment mobile app to Playstore or Appstore</>,
+                    <>Create technical documentation</>,
                 ],
-                images: [ ]
+                images: []
+            },
+            {
+                company: 'PT. Swadharma Duta Data',
+                timeframe: '2016 - 2017',
+                role: 'Android Developer',
+                achievements: [
+                    <>Develop Android Applications</>,
+                    <>Design UI/UX for Android mobile</>,
+                    <>Maintain Android application issues</>,
+                    <>Discuss requirement with users</>,
+                    <>Analyze projects</>,
+                ],
+                images: []
             }
         ]
     },
@@ -109,12 +131,12 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'National University',
+                description: <>Informatics Engineering</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Science',
+                description: <>Public High Schoo; 43 Jakarta</>,
             }
         ]
     },
@@ -178,73 +200,73 @@ const gallery = {
     description: `A photo collection by ${person.name}`,
     // Images from https://pexels.com
     images: [
-        { 
-            src: '/images/gallery/img-01.jpg', 
+        {
+            src: '/images/gallery/restuque-1.png',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-02.jpg', 
+        {
+            src: '/images/gallery/restuque-2.png',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-03.jpg', 
+        {
+            src: '/images/gallery/restuque-3.png',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-04.jpg', 
+        {
+            src: '/images/gallery/restuque-4.png',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-05.jpg', 
+        {
+            src: '/images/gallery/img-05.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-06.jpg', 
+        {
+            src: '/images/gallery/img-06.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-07.jpg', 
+        {
+            src: '/images/gallery/img-07.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-08.jpg', 
+        {
+            src: '/images/gallery/img-08.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-09.jpg', 
+        {
+            src: '/images/gallery/img-09.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-10.jpg', 
+        {
+            src: '/images/gallery/img-10.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-11.jpg', 
+        {
+            src: '/images/gallery/img-11.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-12.jpg', 
+        {
+            src: '/images/gallery/img-12.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-13.jpg', 
+        {
+            src: '/images/gallery/img-13.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-14.jpg', 
+        {
+            src: '/images/gallery/img-14.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },

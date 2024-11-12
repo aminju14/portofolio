@@ -67,6 +67,8 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
             body: JSON.stringify({ password }),
         });
 
+        console.log('Responese : ', response)
+
         if (response.ok) {
             setIsAuthenticated(true);
             setError(undefined);
