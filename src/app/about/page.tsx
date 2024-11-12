@@ -241,7 +241,7 @@ export default function About() {
                                         </Text>
                                         <Flex
                                             as="ul"
-                                            direction="column" gap="5">
+                                            direction="column" gap="4">
                                             {experience.achievements.map((achievement, index) => (
                                                 <Text
                                                     as="li"
